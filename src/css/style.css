@@ -1,0 +1,239 @@
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --primaria: #00d9ff;
+    --fundo: #06000c;
+}
+
+body {
+    background-color: var(--fundo);
+    color: white;
+}
+
+
+.app {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    
+    display: flex;
+    flex-direction: column;
+    background-color: #0000003a;
+
+    
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    min-height: 60px;
+    padding: 0 20px;
+
+}
+
+header .gtihub {
+    text-decoration: none;
+    color: white;
+   font-size: 30px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--primaria);
+}
+
+main {
+    flex: 1;
+    overflow: hidden;
+    overflow-y: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding: 20px;
+    scroll-behavior: smooth;
+}
+
+main::-webkit-scrollbar{width: 0;}
+
+.content {
+    flex: 1;
+    min-height: 100%;
+    background-color: transparent;
+    border-radius: 10px;
+
+}
+
+.content#home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content#home .text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 50px;
+}
+
+.content#home .text .text_min {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+
+
+.content#home .text  p {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.content#home .text  p span{
+    color: var(--primaria);
+}
+.content#home .text a {
+    text-decoration: none;
+    max-width: 200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    border-radius: 10px;
+    background-color: var(--primaria);
+    color: var(--fundo);
+    font-weight: bold;
+
+    margin-top: 20px;
+}
+
+/* sobre */
+.content#projets {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    overflow-x: auto;
+    gap: 20px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+    
+}
+
+.content#projets::-webkit-scrollbar {
+    width: 10px;
+}
+.content#projets::-webkit-scrollbar-thumb {
+    background-color: var(--primaria);
+    border-radius: 10px;
+    
+}
+
+
+.content#projets .card {
+    background-color: white;
+    min-width: 250px;
+    max-width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    color: black;
+    margin-top: 20px;
+}
+
+.content#projets .card span {
+    text-align: center;
+    margin: 10px;
+    font-weight: bold;
+
+
+    font-size: 20px;
+}
+.content#projets .card p {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    
+}
+.content#projets .card a {
+    background-color: var(--primaria);
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    padding: 10px;
+    max-width: 80%;
+    margin: auto;
+    
+    margin-bottom: 10px;
+}
+
+
+/* sobre */
+
+.content#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content#about p {
+    max-width: 80%;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+@media screen and (max-width:600px) {
+    .gtihub {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+
+        font-size: 100px;
+    }
+    .gtihub i {
+        font-size: 60px;
+    }
+    .content#home .text {
+        padding-left: 10px;
+        
+    }
+    .content#home .text p {
+        font-size: 30px;
+    }
+}
