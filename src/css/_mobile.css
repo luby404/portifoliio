@@ -1,0 +1,33 @@
+@media(max-width: 700px){
+    .menu {
+        display: none;
+    }
+    .infos {
+        max-width: 100%;
+    }
+    .infos h1 {
+        font-size: 2rem;
+        max-width: 600px;
+    }
+
+    .lista_content .card {
+        min-width: 100px;
+        max-width: 160px;
+        height: 300px; 
+        max-height: 250px;
+    }
+    .lista_content .card strong {
+        font-size: .7rem;
+    }
+    .lista_content .card p, span {
+        font-size: .7rem;
+    }
+    .center {
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+    }
+    .projetos_slyd {
+        max-height: 300px;
+    }
+}
